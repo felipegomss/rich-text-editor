@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css" />
+	<script src="https://kit.fontawesome.com/86530e25de.js" crossorigin="anonymous"></script>
+	<title>Document</title>
+</head>
+
+<script>
+	function change(cmd) {
+		document.execCommand(cmd, false, null);
+	}
+</script>
+
+<body>
+	<main>
+		<span>
+			<ul>
+				<li>
+					<button type="button" data-command="bold" onclick="change('bold')">
+						<i class="fas fa-bold"></i>
+					</button>
+				</li>
+				<li>
+					<button type="button" data-command="italic" onclick="change('italic')">
+						<i class="fas fa-italic"></i>
+					</button>
+				</li>
+				<li>
+					<button type="button" data-command="underline" onclick="change('underline')">
+						<i class="fas fa-underline"></i>
+					</button>
+				</li>
+				<li>
+					<button type="button" data-command="justifyfull" onclick="change('justifyfull')">
+						<i class="fas fa-align-justify"></i>
+					</button>
+				</li>
+				<li>
+					<button type="button" data-command="justifyLeft" onclick="change('justifyLeft')">
+						<i class="fas fa-align-left"></i>
+					</button>
+				</li>
+				<li>
+					<button type="button" data-command="justifyCenter" onclick="change('justifyCenter')">
+						<i class="fas fa-align-center"></i>
+					</button>
+				</li>
+				<li>
+					<button type="button" data-command="justifyRigh" onclick="change('justifyRigh')">
+						<i class="fas fa-align-right"></i>
+					</button>
+				</li>
+				<li>
+					<button type="button" data-command="createlink" onclick="change('createlink', prompt('Enter a URL here'))">
+						<i class="fas fa-link"></i>
+					</button>
+				</li>
+				<li>
+					<button type="button" data-command="unLink" onclick="change('unLink')">
+						<i class="fas fa-unlink"></i>
+					</button>
+				</li>
+			</ul>
+		</span>
+		<div>
+			<div id="output" contentEditable="true" data-text="Enter your text here"></div>
+		</div>
+	</main>
+</body>
+
+</html>
