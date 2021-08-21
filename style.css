@@ -69,7 +69,6 @@ button{
 		padding: 0 2em;
 	}
 	main{
-		box-shadow: none;
 		padding: 0;
 		flex-direction: column-reverse;
 	}
